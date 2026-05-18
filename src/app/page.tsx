@@ -76,7 +76,7 @@ export default function Home() {
             No job is too big or too small.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition overflow-hidden">
               <img
                 src="/images/hot-tub-removal-service.jpg"
@@ -129,7 +129,7 @@ export default function Home() {
 
             <div className="bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition overflow-hidden">
               <img
-                src="/images/hot-tub-unit.jpg.webp"
+                src="/images/hot-tub-unit.webp"
                 alt="Above ground jacuzzi and hot tub unit for removal and disposal"
                 className="w-full h-48 object-cover"
                 width="600"
@@ -150,26 +150,6 @@ export default function Home() {
                   Learn more →
                 </Link>
               </div>
-            </div>
-
-            <div className="bg-white rounded-xl shadow-md p-6 border border-gray-100 hover:shadow-lg transition">
-              <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-5">
-                <svg className="w-7 h-7 text-primary-700" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.768 0-1.536.219-2.121.659-1.172.879-1.172 2.303 0 3.182zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <h3 className="text-xl font-bold mb-3 text-primary-900">
-                <Link href="/pricing/" className="hover:text-primary-600">
-                  Pricing & Estimates
-                </Link>
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Transparent pricing with no hidden fees.
-                Get a free, no-obligation estimate before we start any work.
-              </p>
-              <Link href="/pricing/" className="text-primary-600 font-semibold hover:text-primary-800">
-                View pricing →
-              </Link>
             </div>
           </div>
         </div>
@@ -201,10 +181,10 @@ export default function Home() {
                 2
               </div>
               <div>
-                <h3 className="text-lg font-bold mb-2">No Hidden Fees</h3>
+                <h3 className="text-lg font-bold mb-2">Transparent Estimates</h3>
                 <p className="text-gray-600">
-                  Our free estimate is the price you pay. No surprise charges for stairs, 
-                  distance, or disposal. Transparent pricing every time.
+                  We provide clear, upfront estimates before any work begins. 
+                  No surprise charges or hidden fees.
                 </p>
               </div>
             </div>
@@ -370,14 +350,6 @@ export default function Home() {
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "How much does hot tub removal cost in Wichita, KS?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Hot tub removal in Wichita typically costs between $250 and $800 depending on size and location. Small 2-person above-ground tubs start at $250, while large 8-person built-in units can cost $500–$800. We offer free estimates before any work begins.",
-                },
-              },
-              {
-                "@type": "Question",
                 "name": "Who removes hot tubs in Wichita, Kansas?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -389,7 +361,7 @@ export default function Home() {
                 "name": "Can you remove a hot tub from a deck in Wichita?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes, we remove hot tubs from decks, patios, rooftops, and tight backyards throughout the Wichita metro area. We use plywood pathways to protect your deck during removal. If partial deck disassembly is required, we handle that too at an additional cost of $150–$400.",
+                  "text": "Yes, we remove hot tubs from decks, patios, rooftops, and tight backyards throughout the Wichita metro area. We use plywood pathways to protect your deck during removal. If partial deck disassembly is required, we handle that too.",
                 },
               },
               {
@@ -413,17 +385,6 @@ export default function Home() {
           </h2>
 
           <div className="space-y-6">
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
-              <h3 className="text-lg font-bold text-primary-900 mb-3">
-                How much does hot tub removal cost in Wichita, KS?
-              </h3>
-              <p className="text-gray-700">
-                Hot tub removal in Wichita typically costs between $250 and $800 depending on size and location. 
-                Small 2-person above-ground tubs start at $250, while large 8-person built-in units can cost $500–$800. 
-                We offer free estimates before any work begins.
-              </p>
-            </div>
-
             <div className="bg-white border border-gray-200 rounded-lg p-6">
               <h3 className="text-lg font-bold text-primary-900 mb-3">
                 Who removes hot tubs in Wichita, Kansas?
@@ -488,7 +449,6 @@ export default function Home() {
                 <li><Link href="/services/hot-tub-removal/" className="hover:text-white">Hot Tub Removal</Link></li>
                 <li><Link href="/services/spa-removal/" className="hover:text-white">Spa Removal</Link></li>
                 <li><Link href="/services/jacuzzi-removal/" className="hover:text-white">Jacuzzi Removal</Link></li>
-                <li><Link href="/pricing/" className="hover:text-white">Pricing</Link></li>
               </ul>
             </div>
             <div>

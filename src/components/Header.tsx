@@ -16,9 +16,6 @@ export default function Header() {
             <Link href="/services/hot-tub-removal/" className="hover:text-primary-200 transition">
               Services
             </Link>
-            <Link href="/pricing/" className="hover:text-primary-200 transition">
-              Pricing
-            </Link>
             <Link href="/areas-we-serve/" className="hover:text-primary-200 transition">
               Areas We Serve
             </Link>
