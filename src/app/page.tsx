@@ -129,7 +129,7 @@ export default function Home() {
 
             <div className="bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition overflow-hidden">
               <img
-                src="/images/hot-tub-unit.jpg"
+                src="/images/hot-tub-unit.jpg.webp"
                 alt="Above ground jacuzzi and hot tub unit for removal and disposal"
                 className="w-full h-48 object-cover"
                 width="600"
