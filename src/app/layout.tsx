@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/components/Header";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 export const metadata: Metadata = {
@@ -50,6 +51,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className="antialiased">
+        <Header />
         {children}
         <WhatsAppButton />
         <script
