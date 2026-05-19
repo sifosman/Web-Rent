@@ -1,4 +1,15 @@
+'use client';
+
 export default function WhatsAppButton() {
+  const handleClick = () => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'click', {
+        event_category: 'engagement',
+        event_label: 'whatsapp_button',
+      });
+    }
+  };
+
   return (
     <a
       href="https://wa.me/27658475289?text=I%20need%20hot%20tub%20removal"
@@ -6,6 +17,7 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
       className="fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600 transition hover:scale-105"
+      onClick={handleClick}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
