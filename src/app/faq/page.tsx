@@ -113,7 +113,7 @@ export default function FAQPage() {
               Call us directly — we're happy to answer any questions about hot tub removal in Wichita.
             </p>
             <a
-              href="tel:316-555-0199"
+              href="tel:+13164022339"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition"
             >
               Call (316) 402-2339

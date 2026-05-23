@@ -83,7 +83,7 @@ export default function JacuzziRemovalPage() {
               Bathroom remodel or backyard cleanup — we'll remove your jacuzzi fast.
             </p>
             <a
-              href="tel:316-402-2339"
+              href="tel:+13164022339"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
             >
               Call (316) 402-2339

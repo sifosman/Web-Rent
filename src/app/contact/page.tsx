@@ -33,8 +33,8 @@ export default function ContactPage() {
                 <div>
                   <h3 className="font-bold text-gray-900">Phone</h3>
                   <p className="text-gray-700">
-                    <a href="tel:316-555-0199" className="text-primary-600 hover:text-primary-800 font-semibold text-lg">
-                      (316) 555-0199
+                    <a href="tel:+13164022339" className="text-primary-600 hover:text-primary-800 font-semibold text-lg">
+                      (316) 402-2339
                     </a>
                   </p>
                   <p className="text-sm text-gray-500">Mon–Sat, 7:00 AM – 7:00 PM</p>
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   We do our best to accommodate urgent requests.
                 </p>
                 <a
-                  href="tel:316-402-2339"
+                  href="tel:+13164022339"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition w-full"
                 >
                   Call Now

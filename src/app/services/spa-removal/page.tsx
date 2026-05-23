@@ -84,7 +84,7 @@ export default function SpaRemovalPage() {
               Free estimates for spa removal anywhere in Wichita and surrounding areas.
             </p>
             <a
-              href="tel:316-402-2339"
+              href="tel:+13164022339"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
             >
               Call (316) 402-2339

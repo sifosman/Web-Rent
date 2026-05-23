@@ -31,7 +31,7 @@ export default function Header() {
           </nav>
 
           <a
-            href="tel:316-402-2339"
+            href="tel:+13164022339"
             className="md:hidden bg-white text-primary-900 px-4 py-2 rounded-lg font-semibold hover:bg-primary-50 transition"
           >
             Call Now

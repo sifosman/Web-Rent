@@ -25,7 +25,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:316-402-2339"
+                href="tel:+13164022339"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
               >
                 Call (316) 402-2339
@@ -326,10 +326,10 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="tel:316-555-0199"
+              href="tel:+13164022339"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
             >
-              Call (316) 555-0199
+              Call (316) 402-2339
             </a>
             <Link
               href="/contact/"
