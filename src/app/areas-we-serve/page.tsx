@@ -54,10 +54,10 @@ export default function AreasPage() {
               of Wichita, we can likely help. Call us to confirm service to your location.
             </p>
             <a
-              href="tel:316-555-0199"
+              href="tel:316-402-2339"
               className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition"
             >
-              Call (316) 555-0199
+              Call (316) 402-2339
             </a>
           </div>
         </div>

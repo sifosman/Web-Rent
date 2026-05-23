@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Hot Tub Removal Wichita — Free Estimate",
-  description: "Contact Wichita Hot Tub Removal for a free estimate. Call (316) 555-0199 or fill out our form. Same-day hot tub removal available in Wichita, KS.",
+  description: "Contact Wichita Hot Tub Removal for a free estimate. Call (316) 402-2339 or fill out our form. Same-day hot tub removal available in Wichita, KS.",
   alternates: {
     canonical: "https://wichitahottubremoval.com/contact/",
   },
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   We do our best to accommodate urgent requests.
                 </p>
                 <a
-                  href="tel:316-555-0199"
+                  href="tel:316-402-2339"
                   className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition w-full"
                 >
                   Call Now

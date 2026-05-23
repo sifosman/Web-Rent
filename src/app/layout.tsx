@@ -65,7 +65,7 @@ export default function RootLayout({
               "name": "Wichita Hot Tub Removal",
               "description": "Professional hot tub, spa, and jacuzzi removal services in Wichita, Kansas and surrounding areas.",
               "url": "https://wichitahottubremoval.com",
-              "telephone": "+1-316-555-0199",
+              "telephone": "+1-316-402-2339",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Serving the Wichita Metro Area",

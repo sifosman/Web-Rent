@@ -116,7 +116,7 @@ export default function FAQPage() {
               href="tel:316-555-0199"
               className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition"
             >
-              Call (316) 555-0199
+              Call (316) 402-2339
             </a>
           </div>
         </div>

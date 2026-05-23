@@ -150,10 +150,10 @@ export default function HotTubRemovalPage() {
               Call today for a free, no-obligation quote. Same-day removal available in Wichita.
             </p>
             <a
-              href="tel:316-555-0199"
+              href="tel:316-402-2339"
               className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
             >
-              Call (316) 555-0199
+              Call (316) 402-2339
             </a>
           </div>
         </div>

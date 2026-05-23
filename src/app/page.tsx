@@ -25,10 +25,10 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:316-555-0199"
+                href="tel:316-402-2339"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-900 font-bold rounded-lg hover:bg-primary-50 transition"
               >
-                Call (316) 555-0199
+                Call (316) 402-2339
               </a>
               <Link
                 href="/contact/"
@@ -423,7 +423,7 @@ export default function Home() {
                 What is the fastest way to get a hot tub removed in Wichita?
               </h3>
               <p className="text-gray-700">
-                The fastest way is to call Wichita Hot Tub Removal at (316) 555-0199 before noon for same-day service. 
+                The fastest way is to call Wichita Hot Tub Removal at (316) 402-2339 before noon for same-day service. 
                 Most removals take 1–3 hours from arrival to cleanup. We handle electrical disconnection, dismantling, 
                 hauling, and disposal — all in one visit.
               </p>
@@ -461,7 +461,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="text-white font-bold mb-4">Contact</h4>
-              <p className="text-sm mb-2">Phone: <a href="tel:316-555-0199" className="hover:text-white">(316) 555-0199</a></p>
+              <p className="text-sm mb-2">Phone: <a href="tel:316-402-2339" className="hover:text-white">(316) 402-2339</a></p>
               <p className="text-sm">Hours: Mon–Sat, 7AM–7PM</p>
             </div>
           </div>
