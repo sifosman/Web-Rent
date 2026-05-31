@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
@@ -56,7 +55,6 @@ export default function RootLayout({
         <GoogleAnalytics />
         <Header />
         {children}
-        <WhatsAppButton />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

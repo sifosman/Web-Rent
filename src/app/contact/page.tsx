@@ -40,14 +40,6 @@ export default function ContactPage() {
                   <p className="text-sm text-gray-500">Mon–Sat, 7:00 AM – 7:00 PM</p>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">WhatsApp</h3>
-                  <p className="text-gray-700">
-                    <a href="https://wa.me/27658475289?text=I%20need%20hot%20tub%20removal" target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-800">
-                      Message us on WhatsApp
-                    </a>
-                  </p>
-                </div>
-                <div>
                   <h3 className="font-bold text-gray-900">Service Area</h3>
                   <p className="text-gray-700">Wichita, KS and surrounding communities</p>
                 </div>
