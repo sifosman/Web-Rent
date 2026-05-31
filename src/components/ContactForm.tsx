@@ -12,7 +12,7 @@ export default function ContactForm() {
 
   return (
     <form 
-      action="https://formsubmit.co/mohamed@owdsolutions.co.za" 
+      action="https://formspree.io/f/xzdwqnwa" 
       method="POST" 
       className="space-y-4"
       onSubmit={handleSubmit}
