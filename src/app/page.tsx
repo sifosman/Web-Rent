@@ -369,7 +369,7 @@ export default function Home() {
                 "name": "What is the fastest way to get a hot tub removed in Wichita?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "The fastest way is to call Wichita Hot Tub Removal at (316) 555-0199 before noon for same-day service. Most removals take 1–3 hours from arrival to cleanup. We handle electrical disconnection, dismantling, hauling, and disposal — all in one visit.",
+                  "text": "The fastest way is to call Wichita Hot Tub Removal at (316) 402-2339 before noon for same-day service. Most removals take 1–3 hours from arrival to cleanup. We handle electrical disconnection, dismantling, hauling, and disposal — all in one visit.",
                 },
               },
             ],

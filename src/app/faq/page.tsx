@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Do you offer same-day hot tub removal in Wichita?",
-    answer: "Yes, same-day hot tub removal is available in Wichita when you call before noon and we have an opening in our schedule. We understand that sometimes you need a hot tub removed urgently — before a home sale, after a storm, or when you're preparing for a remodel. Call (316) 555-0199 to check availability.",
+    answer: "Yes, same-day hot tub removal is available in Wichita when you call before noon and we have an opening in our schedule. We understand that sometimes you need a hot tub removed urgently — before a home sale, after a storm, or when you're preparing for a remodel. Call (316) 402-2339 to check availability.",
   },
   {
     question: "What types of hot tubs do you remove?",

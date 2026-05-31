@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     siteName: "Wichita Hot Tub Removal",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://wichitahottubremoval.com/images/hot-tub-removal-service.jpg", width: 1200, height: 800 }],
   },
   twitter: {
     card: "summary_large_image",
