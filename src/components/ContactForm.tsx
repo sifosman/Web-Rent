@@ -1,5 +1,7 @@
 'use client';
 
+const FORMSPREE_ID = "xzdwqnwa";
+
 export default function ContactForm() {
   const handleSubmit = (e: React.FormEvent) => {
     if (typeof window !== 'undefined' && (window as any).gtag) {
@@ -11,103 +13,55 @@ export default function ContactForm() {
   };
 
   return (
-    <form 
-      action="https://formspree.io/f/xzdwqnwa" 
-      method="POST" 
-      className="space-y-4"
+    <form
+      action={`https://formspree.io/f/${FORMSPREE_ID}`}
+      method="POST"
+      className="flex flex-col gap-4"
       onSubmit={handleSubmit}
     >
       <input type="hidden" name="_subject" value="New Hot Tub Removal Quote Request - Wichita" />
-      <input type="hidden" name="_next" value="https://wichitahottubremoval.com/contact/" />
       <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_next" value="https://wichitahottubremoval.com/contact/?sent=1" />
+
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-          Full Name *
+        <label className="font-bold text-sm tracking-wider text-[#c8c5cd] block mb-2 uppercase">
+          Name
         </label>
         <input
-          type="text"
-          id="name"
+          className="input-dark"
           name="name"
-          required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          placeholder="Your name"
-        />
-      </div>
-      <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-          Phone Number *
-        </label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          placeholder="(316) 555-1234"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-          Email Address
-        </label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          placeholder="you@example.com"
-        />
-      </div>
-      <div>
-        <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-1">
-          Location / City *
-        </label>
-        <input
+          placeholder="John Doe"
           type="text"
-          id="location"
-          name="location"
           required
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          placeholder="Wichita, Derby, Andover, etc."
         />
       </div>
       <div>
-        <label htmlFor="tub-type" className="block text-sm font-medium text-gray-700 mb-1">
-          Type of Hot Tub
+        <label className="font-bold text-sm tracking-wider text-[#c8c5cd] block mb-2 uppercase">
+          Phone
         </label>
-        <select
-          id="tub-type"
-          name="tub-type"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-        >
-          <option value="">Select a type</option>
-          <option value="above-ground-hot-tub">Above-ground hot tub</option>
-          <option value="built-in-spa">Built-in spa</option>
-          <option value="portable-spa">Portable / inflatable spa</option>
-          <option value="jacuzzi">Jacuzzi tub</option>
-          <option value="swim-spa">Swim spa</option>
-          <option value="not-sure">Not sure / other</option>
-        </select>
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-          Additional Details
-        </label>
-        <textarea
-          id="message"
-          name="message"
-          rows={4}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-          placeholder="Tell us about the size, location (deck/patio/ground), and any access issues..."
+        <input
+          className="input-dark"
+          name="phone"
+          placeholder="(316) 555-0123"
+          type="tel"
+          required
         />
       </div>
-      <button
-        type="submit"
-        className="w-full px-8 py-4 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition"
-      >
-        Request Free Estimate
+      <div>
+        <label className="font-bold text-sm tracking-wider text-[#c8c5cd] block mb-2 uppercase">
+          Address
+        </label>
+        <input
+          className="input-dark"
+          name="address"
+          placeholder="123 Wichita St."
+          type="text"
+        />
+      </div>
+      <button className="btn-primary w-full mt-4" type="submit">
+        Get Started
       </button>
-      <p className="text-xs text-gray-500 text-center">
+      <p className="text-xs text-[#c8c5cd] text-center">
         We respect your privacy. Your information will never be shared.
       </p>
     </form>

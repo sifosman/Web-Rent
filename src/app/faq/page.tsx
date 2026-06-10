@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Hot Tub Removal FAQ Wichita | Common Questions Answered",
@@ -7,6 +10,9 @@ export const metadata: Metadata = {
     canonical: "https://wichitahottubremoval.com/faq/",
   },
 };
+
+const PHONE = "(316) 402-2339";
+const PHONE_HREF = "tel:+13164022339";
 
 const faqs = [
   {
@@ -74,53 +80,45 @@ export default function FAQPage() {
   };
 
   return (
-    <main>
-      <section className="bg-primary-900 text-white py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Hot Tub Removal FAQ — Wichita, KS
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            Answers to the most common questions about hot tub removal, disposal, and pricing in Wichita.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-          />
-
-          <div className="space-y-6">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-md transition"
-              >
-                <h2 className="text-lg font-bold text-primary-900 mb-3">
-                  {faq.question}
-                </h2>
-                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="bg-primary-50 rounded-xl p-8 text-center mt-12">
-            <h2 className="text-2xl font-bold mb-4">Still Have Questions?</h2>
-            <p className="text-gray-700 mb-6">
-              Call us directly — we're happy to answer any questions about hot tub removal in Wichita.
+    <>
+      <SiteHeader />
+      <main>
+        <section className="relative pt-32 pb-20 px-6" style={{ backgroundColor: "#1a1a2e" }}>
+          <div className="max-w-[1280px] mx-auto">
+            <h1 className="font-display text-4xl md:text-5xl text-[#e2e2e2] uppercase mb-4">
+              Hot Tub Removal FAQ — Wichita, KS
+            </h1>
+            <p className="text-lg text-[#c8c5cd] max-w-2xl">
+              Answers to the most common questions about hot tub removal, disposal, and pricing in Wichita.
             </p>
-            <a
-              href="tel:+13164022339"
-              className="inline-flex items-center justify-center px-8 py-4 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition"
-            >
-              Call (316) 402-2339
-            </a>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+
+        <section className="py-20 px-6">
+          <div className="max-w-[1280px] mx-auto max-w-3xl">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+
+            <FaqAccordion faqs={faqs} />
+
+            <div className="card-dark p-8 text-center mt-12">
+              <h2 className="font-display text-2xl text-[#e2e2e2] uppercase mb-4">Still Have Questions?</h2>
+              <p className="text-[#c8c5cd] mb-6">
+                Call us directly — we&apos;re happy to answer any questions about hot tub removal in Wichita.
+              </p>
+              <a
+                href={PHONE_HREF}
+                className="btn-primary"
+              >
+                Call {PHONE}
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
   );
 }

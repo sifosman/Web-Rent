@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import SiteHeader from "@/components/SiteHeader";
+import SiteFooter from "@/components/SiteFooter";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
@@ -9,64 +11,70 @@ export const metadata: Metadata = {
   },
 };
 
+const PHONE = "(316) 402-2339";
+const PHONE_HREF = "tel:+13164022339";
+
 export default function ContactPage() {
   return (
-    <main>
-      <section className="bg-primary-900 text-white py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            Get a Free Hot Tub Removal Estimate
-          </h1>
-          <p className="text-xl text-primary-100 max-w-3xl">
-            Call us now or fill out the form below. We'll respond within 2 hours during business hours 
-            with your free, no-obligation quote.
-          </p>
-        </div>
-      </section>
+    <>
+      <SiteHeader />
+      <main>
+        <section className="relative pt-32 pb-20 px-6" style={{ backgroundColor: "#1a1a2e" }}>
+          <div className="max-w-[1280px] mx-auto">
+            <h1 className="font-display text-4xl md:text-5xl text-[#e2e2e2] uppercase mb-4">
+              Get a Free Hot Tub Removal Estimate
+            </h1>
+            <p className="text-lg text-[#c8c5cd] max-w-2xl">
+              Call us now or fill out the form below. We will respond within 2 hours during business hours
+              with your free, no-obligation quote.
+            </p>
+          </div>
+        </section>
 
-      <section className="py-12">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="space-y-4 mb-8">
-                <div>
-                  <h3 className="font-bold text-gray-900">Phone</h3>
-                  <p className="text-gray-700">
-                    <a href="tel:+13164022339" className="text-primary-600 hover:text-primary-800 font-semibold text-lg">
-                      (316) 402-2339
-                    </a>
+        <section className="py-20 px-6">
+          <div className="max-w-[1280px] mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div>
+                <h2 className="font-display text-2xl text-[#e2e2e2] uppercase mb-6">Contact Information</h2>
+                <div className="space-y-4 mb-8">
+                  <div>
+                    <h3 className="font-bold text-sm tracking-wider text-[#c8c5cd] uppercase">Phone</h3>
+                    <p className="text-[#e2e2e2]">
+                      <a href={PHONE_HREF} className="text-[#e94560] hover:text-white font-bold text-lg transition-colors no-underline">
+                        {PHONE}
+                      </a>
+                    </p>
+                    <p className="text-sm text-[#c8c5cd]">Mon–Sat, 7:00 AM – 7:00 PM</p>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-sm tracking-wider text-[#c8c5cd] uppercase">Service Area</h3>
+                    <p className="text-[#e2e2e2]">Wichita, KS and surrounding communities</p>
+                  </div>
+                </div>
+
+                <div className="card-dark p-6">
+                  <h3 className="font-display text-xl text-[#e2e2e2] uppercase mb-3">Need Same-Day Service?</h3>
+                  <p className="text-[#c8c5cd] text-sm mb-4">
+                    Call before noon for same-day hot tub removal availability in Wichita.
+                    We do our best to accommodate urgent requests.
                   </p>
-                  <p className="text-sm text-gray-500">Mon–Sat, 7:00 AM – 7:00 PM</p>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900">Service Area</h3>
-                  <p className="text-gray-700">Wichita, KS and surrounding communities</p>
+                  <a href={PHONE_HREF} className="btn-primary w-full">
+                    Call Now
+                  </a>
                 </div>
               </div>
 
-              <div className="bg-primary-50 rounded-xl p-6">
-                <h3 className="font-bold text-primary-900 mb-2">Need Same-Day Service?</h3>
-                <p className="text-gray-700 text-sm mb-4">
-                  Call before noon for same-day hot tub removal availability in Wichita. 
-                  We do our best to accommodate urgent requests.
-                </p>
-                <a
-                  href="tel:+13164022339"
-                  className="inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-bold rounded-lg hover:bg-primary-700 transition w-full"
-                >
-                  Call Now
-                </a>
+              <div className="card-dark p-8">
+                <h2 className="font-display text-2xl text-[#e2e2e2] uppercase mb-6 border-b-2 inline-block" style={{ borderColor: "#e94560", paddingBottom: "8px" }}>
+                  Request a Free Quote
+                </h2>
+                <ContactForm />
               </div>
-            </div>
-
-            <div>
-              <h2 className="text-2xl font-bold mb-6">Request a Free Quote</h2>
-              <ContactForm />
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
